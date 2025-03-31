@@ -4,6 +4,14 @@ import numpy as np
 from scipy import stats
 
 
+def hello():
+    """Print 'hello world'"""
+    print('hello world')
+
+def ismissing(response):
+    response = np.asarray(response)
+    return response == "n/a"
+
 def dprime(trial_type, response):
     """
     Calculate d-prime for recognition memory task responses.
